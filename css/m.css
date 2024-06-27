@@ -4,7 +4,10 @@ html, body{
     height: 100%;
 }
 
-#wrap{height: 100%;}
+#wrap{
+    height: 100%;
+    position: relative;
+}
 
 #header{
     width: 100%;
@@ -188,7 +191,7 @@ sub로 li가 더 있기에 >를 넣어서 구분해줘야 한다 */
 }
 
 .live_list li:hover{
-    background-image: linear-gradient(white 0%, orange 4%);
+    background-image: linear-gradient(orange 5%, white 100%);
 }
 
 .mid{
@@ -211,7 +214,98 @@ sub로 li가 더 있기에 >를 넣어서 구분해줘야 한다 */
     line-height: 2;
 }
 
+/* 노랑버튼 */
+
 .dot{
     text-align: center;
     margin-top: 40px;
+}
+
+/* 스틱키 메뉴 */
+
+.sticky{
+    width: 120px;
+    position: fixed;
+    left: calc(50% + (1168px / 2) + 20px);
+    bottom: 350px;
+}
+
+.sticky a{
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sticky a img{}
+
+/* 푸터 영역 */
+
+#footer{
+    background-color: #292929;
+    margin-top: 30px;
+    padding: 30px 0;
+}
+
+.footer_inner{
+    width: 1168px;
+    margin: 0 auto;
+}
+
+.f_menu{
+    float: left;
+}
+.f_menu li{}
+.f_menu li a{
+    font-weight: bold;
+    color: white;
+    display: block;
+    padding: 10px 0;
+}
+.f_menu li a.yellow{
+    color: yellow !important;
+}
+
+.info{
+    float: left;
+    margin-left: 20px;
+}
+.info li{
+    padding: 10px 0;
+    color: #787878;
+}
+
+.sns{
+    float: right;
+}
+.sns li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.sns li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(/source/ico_sns.png);
+    background-repeat: no-repeat;
+    text-indent: -4000px;
+}
+
+.sns1{
+    background-position: 0 0;
+}
+.sns2{
+    background-position: 0 -40px;
+}
+.sns3{
+    background-position: 0 -80px;
+}
+.sns4{
+    background-position: 0 -120px;
+}
+.sns5{
+    width: 100px !important;
+    height: 72px !important;
+    background-image: url(/source/web_accessibility.png) !important;
+    background-position: center center;
+    background-size: 100%;
 }
